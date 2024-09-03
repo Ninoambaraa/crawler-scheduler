@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Menjalankan script Python
-CMD ["python", "scheduler.py"]
+ENTRYPOINT ["python", "scheduler.py"]
