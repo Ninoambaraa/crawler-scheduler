@@ -9,7 +9,7 @@ def hit_api():
     
 
 # Menjadwalkan tugas setiap 10 menit
-schedule.every(1).minutes.do(hit_api)
+schedule.every(7).days.do(hit_api)
 
 while True:
     schedule.run_pending()
